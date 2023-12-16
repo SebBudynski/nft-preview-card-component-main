@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vh;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+.conteiner{
+    width: 400px;
+    background-color:hsl(215, 32%, 27%);
+    border-radius: 1rem;
+    padding: 25px;
+}
+.img-container{
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 350px;
+}
+
+.equa-img {
+    width:100%;
+}
+
+.name{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 0 ;
+}
+
+.description{
+    color: hsl(215, 51%, 70%);
+}
+
+.ammount{
+    color: aqua;
+}
+
+/* .time{
+    color: hsl(40, 64%, 42%);
+} */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
