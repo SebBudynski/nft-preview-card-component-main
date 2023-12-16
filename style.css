@@ -6,6 +6,8 @@
 
 body {
   min-width: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
 }
 main {
   display: flex;
@@ -13,46 +15,69 @@ main {
   justify-content: center;
   height: 95vh;
 }
-.conteiner{
-    width: 400px;
-    background-color:hsl(215, 32%, 27%);
-    border-radius: 1rem;
-    padding: 25px;
+.conteiner {
+  width: 400px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+  padding: 25px;
+  
+  font-family: "Outfit", sans-serif;
 }
-.img-container{
-    border-radius: 0.5rem;
-    overflow: hidden;
-    width: 350px;
+.img-container {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 350px;
 }
 
 .equa-img {
-    width:100%;
+  width: 100%;
 }
 
-.name{
-    color: white;
-    font-size: 1.5rem;
-    padding: 1rem 0 ;
+.name {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 0;
 }
 
-.description{
-    color: hsl(215, 51%, 70%);
+.description {
+  /* color: hsl(215, 51%, 70%); */
+  font-size: 1.125rem;
 }
 
-.ammount{
-    color: aqua;
+.numbers-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.ammount {
+  color: aqua;
 }
 
-/* .time{
-    color: hsl(40, 64%, 42%);
-} */
+.jules {
+  display: flex;
+}
+
+.jules a {
+  text-decoration: none;
+  color: white;
+}
+.avatar {
+  width: 3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.jules p {
+  color: hsl(215, 51%, 70%);
+}
 
 .attribution {
   font-size: 11px;
   text-align: center;
   align-self: flex-end;
+  color: white;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(215, 51%, 70%);
 }
