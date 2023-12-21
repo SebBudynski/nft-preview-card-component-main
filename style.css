@@ -22,7 +22,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 95vh;
+  height: 100vh;
 }
 .conteiner {
   width: 350px;
@@ -126,14 +126,3 @@ main {
   padding-left: .3rem;
 }
 
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  align-self: flex-end;
-  color: var(--White);
-}
-
-.attribution a {
-  color: var(--Softblue);
-}
