@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
+:root{
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --MainBg: hsl(217, 54%, 11%);
+  --ContainerBg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
 body {
   min-width: 100vh;
-  background-color: hsl(217, 54%, 11%);
-  color: hsl(215, 51%, 70%);
+  background-color:var(--MainBg);
+  color: var(--Softblue);
 }
 main {
   display: flex;
@@ -16,68 +25,115 @@ main {
   height: 95vh;
 }
 .conteiner {
-  width: 400px;
-  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+  background-color: var(--ContainerBg);
   border-radius: 1rem;
   padding: 25px;
-  
   font-family: "Outfit", sans-serif;
 }
+
 .img-container {
-  border-radius: 0.5rem;
-  overflow: hidden;
-  width: 350px;
+  position: relative;
+  width: 300px;
 }
 
 .equa-img {
   width: 100%;
+  border-radius: 8px;
 }
 
-.name {
-  color: white;
-  font-size: 1.5rem;
-  padding: 1rem 0;
+.icon-view{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  content-visibility: hidden;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+
+}
+
+.icon-view:hover{
+  content-visibility: visible;
+  background-color:  hsl(178, 100%, 50%, .3 );
+  cursor: pointer;
+}
+
+.icon-view img {
+  width: 50px;
+  height: 50px;
+  
+}
+
+.title {
+  color: var(--White);
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+  font-weight: 600;
+}
+
+#author:hover ,  .title:hover{
+  color: var(--Cyan);
+  cursor: pointer;
 }
 
 .description {
-  /* color: hsl(215, 51%, 70%); */
   font-size: 1.125rem;
 }
 
 .numbers-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
-}
-.ammount {
-  color: aqua;
+  padding: 1.4rem 0;
+  border-bottom: solid 3px var(--line);
 }
 
+.ammount {
+  color: var(--Cyan);
+  letter-spacing: 2px;
+}
+
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+
 .jules {
+  padding-top: 1rem;
   display: flex;
 }
 
-.jules a {
-  text-decoration: none;
-  color: white;
-}
+
 .avatar {
-  width: 3rem;
-  border: 1px solid white;
+  width: 2.2rem;
+  border: 1px solid var(--White);
   border-radius: 50%;
 }
 
 .jules p {
-  color: hsl(215, 51%, 70%);
+  display: flex;
+  align-items: center;
+  padding-left:1rem;
 }
+
+#author {
+  color: var(--White);
+  padding-left: .3rem;
+}
+
 
 .attribution {
   font-size: 11px;
   text-align: center;
   align-self: flex-end;
-  color: white;
+  color: var(--White);
 }
 
 .attribution a {
-  color: hsl(215, 51%, 70%);
+  color: var(--Softblue);
 }
