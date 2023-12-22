@@ -70,7 +70,7 @@ main {
 .title {
   color: var(--White);
   font-size: 1.4rem;
-  padding: 1rem 0;
+  padding: 1.3rem 0;
   font-weight: 600;
 }
 
@@ -86,7 +86,7 @@ main {
 .numbers-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1.3rem 0;
   border-bottom: solid 3px var(--line);
 }
 
