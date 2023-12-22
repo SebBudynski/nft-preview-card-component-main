@@ -69,8 +69,8 @@ main {
 
 .title {
   color: var(--White);
-  font-size: 1.3rem;
-  padding: 1.5rem 0;
+  font-size: 1.4rem;
+  padding: 1.4rem 0;
   font-weight: 600;
 }
 
@@ -93,6 +93,7 @@ main {
 .ammount {
   color: var(--Cyan);
   letter-spacing: 2px;
+  font-weight: 600;
 }
 
 
